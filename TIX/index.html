@@ -1,0 +1,1514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./VenoBox-master/venobox/venobox.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- ~~~~~~~~~HEADER~~~~~~~~~~ -->
+    <header>
+        <div class="navbar container">
+            <a href="#">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <ul>
+                <a href="#">
+                    <li>Lịch chiếu</li>
+                </a>
+                <a href="#">
+                    <li>Cụm rạp</li>
+                </a>
+                <a href="#">
+                    <li>Tin Tức</li>
+                </a>
+                <a href="#">
+                    <li>Ứng dụng</li>
+                </a>
+            </ul>
+            <div class="heading__item__right">
+                <a href=" #">
+                    <img class="avatar" src="./img/avatar.png" alt="">
+                </a>
+                <a href=" #"><span>Đăng nhập</span></a>
+                <a class="heading-location" href=" #">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hồ Chí Minh</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ~~~~~~~~~CAROUSEL~~~~~~~~~~ -->
+    <section id="carousel" class="slick-carousel">
+        <div class="carousel__item bg1">
+            <div>
+                <a class="venobox" data-vbtype="video" data-autoplay="true"
+                    href="https://www.youtube.com/watch?v=kEgUgrh2rdA">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel__item bg2">
+            <div>
+                <a class="venobox" data-vbtype="video" data-autoplay="true"
+                    href="https://www.youtube.com/watch?v=4zYGlqyCVk4">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel__item bg3">
+            <div>
+                <a class="venobox" data-vbtype="video" data-autoplay="true"
+                    href="https://www.youtube.com/watch?v=T36HGZagV5w">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel__item bg4">
+            <div>
+                <a class="venobox" data-vbtype="video" data-autoplay="true"
+                    href="https://www.youtube.com/watch?v=kJcfrHDTSEQ">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel__item bg5">
+            <div>
+                <a class="venobox" data-vbtype="video" data-autoplay="true"
+                    href="https://www.youtube.com/watch?v=iCw-LfLw_Zk">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ~~~~~~~~~FILM - LIST~~~~~~~~~~ -->
+
+    <section id="film-list" class="container">
+        <div class="filter container">
+            <div class="row">
+                <div class="filter-format col-md-3">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Phim</a>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-format col-md-2">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Rạp</a>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-format col-md-2">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Ngày xem</a>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-format col-md-2">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Suất chiếu</a>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-format col-md-3">
+                    <button class="btn btn-success">Mua vé ngay</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav pills -->
+        <ul id="film-nav" class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#premiere">Đang chiếu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#coming">Sắp chiếu</a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="premiere" class="slick-carousel-noDots film-list-showing tab-pane  active">
+                <div class="container" id="">
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-1">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-2">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-3">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-4">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-5">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-6">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-7">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-8">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container  " id="">
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-9">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-10">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-11">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-12">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-13">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-14">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-15">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-16">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="coming">
+                <div class="container" id="">
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-1">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-2">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-3">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-4">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-5">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-6">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-7">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-8">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container  " id="">
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-9">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-10">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-11">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-12">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-line-1">
+                        <div class="film-list-item">
+                            <div class="poster film-13">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+
+                        <div class="film-list-item">
+                            <div class="poster film-14">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-15">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                        <div class="film-list-item">
+                            <div class="poster film-16">
+                                <div class="overlay">
+                                    <a class="venobox" data-vbtype="video" data-autoplay="true"
+                                        href="https://www.youtube.com/watch?v=egf7uIq6SvQ"><i
+                                            class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="film-info">
+                                <span class="age-limit">C18</span>
+                                <span>Chị Mười Ba: Ba Ngày Sinh Tử (C18)</span>
+                                <p>100 phút</p>
+                                <button class="btn btn-danger">MUA VÉ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="shadow-line"></section>
+    <!-- ~~~~~~~~~CALENDER~~~~~~~~~ -->
+    <section id="calender">
+        <div class="total-table container ">
+            <div class="row table-height">
+                <div class="col-md-1">
+                    <ul class="nav nav-tabs">
+                        <li class="left-col nav-item ">
+                            <a class="nav-link active" data-toggle="tab" href="#calender1">
+                                <img src="./img/theater-1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="left-col nav-item ">
+                            <a class="nav-link " data-toggle="tab" href="#calender2">
+                                <img src="./img/theater-2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="left-col nav-item ">
+                            <a class="nav-link " data-toggle="tab" href="#calender3">
+                                <img src="./img/theater-3.png" alt="">
+                            </a>
+                        </li>
+                        <li class="left-col nav-item ">
+                            <a class="nav-link " data-toggle="tab" href="#calender4">
+                                <img src="./img/theater-4.png" alt="">
+                            </a>
+                        </li>
+                        <li class="left-col nav-item ">
+                            <a class="nav-link " data-toggle="tab" href="#calender5">
+                                <img src="./img/theater-5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="left-col nav-item ">
+                            <a class="nav-link " data-toggle="tab" href="#calender6">
+                                <img src="./img/theater-6.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="tab-content">
+                        <div class="tab-pane container active " id="calender1">
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-1.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-2.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-3.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-4.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-5.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-6.png">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tab-pane container fade " id="calender2">
+
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-7.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="tab-pane container fade " id="calender3">
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-8.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-9.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="tab-pane container fade " id="calender4">
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-10.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="tab-pane container fade " id="calender5">
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/theater-5.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="tab-pane container fade " id="calender6">
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-11.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-12.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-13.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-14.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-15.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                            <a href="#" class="row">
+                                <div class="col-md-3">
+                                    <img src="./img/address-16.jpg">
+                                </div>
+                                <div class="col-md-9 theater-text">
+                                    <span class="theater-name">BHD Star -</span> <span
+                                        class="theater-area">Bitexco</span>
+                                    <p class="theater-address">L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                    <span class="theater-detail">[chi tiết]</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Không có suất chiếu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="shadow-line"></section>
+    <!-- ~~~~~~~~~NEWS~~~~~~~~~ -->
+    <section id="news">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#news0">Điện Ảnh 24h</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#news1">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#news2">Khuyến Mãi</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="news0">
+                <div class="row news-content">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-1.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-2.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                </div>
+                <div class="row news-content">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4 sub-news">
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="news1">
+                <div class="row news-content">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-1.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-2.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                </div>
+                <div class="row news-content">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4 sub-news">
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="news2">
+                <div class="row news-content">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-1.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="/img/news-2.jpg">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                </div>
+                <div class="row news-content">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/img/news-3.png">
+                        <a class="news-title" href="#">
+                            <h5>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</h5>
+                        </a>
+                        <p class="news-text">Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây
+                            thành phố HCM sẽ
+                            chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt Nam!
+                        </p>
+                        <a href="#"><i class="far fa-thumbs-up">2</i></a>
+                        <a href="#"><i class="far fa-comment-alt">0</i></a>
+                    </div>
+                    <div class="col-md-4 sub-news">
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 sub-news-img">
+                                <img src="./img/sub-news-1.png">
+                            </div>
+                            <div class="col-md-9 sub-news-text">
+                                <a href="#">
+                                    <p>Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi sắp tới đây thành
+                                        phố
+                                        HCM sẽ chào đón một rạp chiếu phim mang phong cách Artistic Urban Lifestyle đầu
+                                        tiên
+                                        tại Việt Nam!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn ">Xem Thêm</button>
+        </div>
+    </section>
+    <!-- ~~~~~~~~~APPS~~~~~~~~~ -->
+    <section id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h1>
+                    <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn</p>
+                    <button class="btn btn-danger">App miễn phí - tải về ngay!</button>
+                    <p>TIX có hai phiên bản <a href="#"> iOS</a> & <a href="#">Android</a></p>
+                </div>
+                <div class="col-md-6 app-right-content">
+                    <img src="/img/mobile.png" alt="">
+                    <div class="slide">
+                        <div class=" mob slick-carousel-noDotsArrows">
+                            <img src="/img/slide-1.jpg" alt="">
+                            <img src="/img/slide-2.jpg" alt="">
+                            <img src="/img/slide-3.jpg" alt="">
+                            <img src="/img/slide-4.jpg" alt="">
+                            <img src="/img/slide-5.jpg" alt="">
+                            <img src="/img/slide-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ~~~~~~~~~APPS~~~~~~~~~ -->
+    <section id="footer">
+        <div class="container">
+            <div class="row top-footer">
+                <div class="left col-md-4">
+                    <p>TIX</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#">FAQ</a>
+                            <a href="#">Brand Guidelines</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#">Thoả thuận sử dụng</a>
+                            <a href="#">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid col-md-4">
+                    <p>Đối tác</p>
+                    <div class="row">
+                        <a href="#">
+                            <img src="/img/logoConnect-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-4.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="/img/logoConnect-6.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-7.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-8.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-9.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="/img/logoConnect-11.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-12.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-13.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-14.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-15.png" alt="">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="/img/logoConnect-16.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-17.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-18.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-19.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/img/logoConnect-20.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="right col-md-4">
+                    <div class="row">
+                        <div class="media-social col-md-6">
+                            <p>MOBILE APP</p>
+                            <a href="#">
+                                <img src="/img/footer-logo-1.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/img/footer-logo-2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="app col-md-6">
+                            <p>SOCIAL</p>
+                            <a href="#">
+                                <img src="/img/footer-logo-3.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/img/footer-logo-4.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <div class="col-md-2">
+                    <a href="#">
+                        <img src="/img/footer-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <p class="title">TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                    <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</br>
+                        Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</br>
+                        đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí
+                        Minh cấp.</br>
+                        Số Điện Thoại (Hotline): 1900 545 436</br>
+                        Email: <a href="#">support@tix.vn</a></p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">
+                        <img src="/img/footer-2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick-carousel').slick({
+                autoplay: false,
+                dots: true,
+            }
+            );
+        });
+        $(document).ready(function () {
+            $('.slick-carousel-noDotsArrows').slick({
+                autoplay: false,
+                arrows: false
+            }
+            );
+
+        });
+        $(document).ready(function () {
+            $('.slick-carousel-noDots').slick({
+                autoplay: false,
+            }
+            );
+
+        });
+    </script>
+    <script src="./VenoBox-master/venobox/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
+</body>
+
+</html>
